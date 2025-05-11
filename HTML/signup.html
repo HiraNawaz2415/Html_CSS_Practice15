@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login </title>
+       <style>
+        *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+body
+{
+ display:flex;
+align-item:center;
+justify-content:center;
+background:#5372F0;
+}
+.wrapper{
+width:380px;
+background:#fff;
+text-align:cenetr;
+border-radius:5px;
+padding:40px 30px 50px 30px;
+}
+.wrapper #email_error,
+.wrapper #pass_error{
+margin-top:5px;
+width:345px;
+font-size:18px;
+color: #C62828;
+background:red;
+text-align:center;
+padding:5px 8px;
+border-radius:3px;
+border:1px solid #EF9A9A;
+display:none;
+display:none;
+display:none;S
+return false;
+}
+}
+form.field{
+ width:100%;
+ margin-bottom:20px;
+}
+ form.field.input-area{
+ position:relative;
+}
+.wrapper h1
+{
+font-size:35px;
+font-weight:600;
+}
+.wrapper form{
+margin:40px 0;
+}
+.wrapper button{
+   margin 45px 0 35px 0;
+   height:45px;
+   width:315px;
+   font-size:20px;
+   color:white;
+   outline:none;
+   cursor:pointer;
+  font-weightL:bold;
+  background:#1A237E;
+  border-radius:3px;
+border:1px solid #3949AB;
+ transition: .5s;
+}
+.wrapper  button:hover{
+background:#151c6a;
+}
+form input{
+height:50px;
+width:100%;
+padding:0 45px;
+outline:none;
+font-size:18px;
+border-radius:5px;
+border:1px solid #bfbfbf;
+border-bottom-width:2px;
+}
+form input::placeholder{
+color:#bfbfbf;
+font-size:17px;
+}
+form.field i
+{
+position:absolute;
+top:50%;
+font-size:18px;
+transform:translatey(-50%);
+}
+form.field.icon{
+left:15px;
+color:#bfbfbf;
+}
+form.field.error-icon{
+right:`15px;
+color:#dc3545;
+}
+form.pass-link{
+text-align:left;
+margin-top:-5px;
+}
+.wrapper a{
+color:#5372F0;
+text-decoration none;
+}
+.wrapper a:hover{
+text-decoration:underline;
+}
+{
+po
+}
+        </style>
+        <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <div class="wrapper" style="text-align:center;">
+      <h1>SignUp Form</h1>
+      <form name="form" action="#"
+       method="post"
+       onsubmit="return validated()">
+          <div class="field email">
+          <div class="input-area">
+              <input type="text" name="Fname" placeholder="First Name"></br></br>
+          </div>
+                  <input type="text" name="Lname" placeholder="Last Name"></br></br>
+            <input type="text" name="email" placeholder="Email Address"><br></br>
+             <div id="email_error">Email can't be empty</div>       
+            </div>
+          <div class="field password">
+          <div class="input-area">
+           <input type="password" name="password" placeholder="Password">
+          <div id="pass_error">Password can't be empty</div><br><br>  
+         <input type="text" name="addr" placeholder="City Name"></br></br>
+           </div>
+           </div>
+            <div class="pass-link"><a href="#">Forget password?</a></div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">Not yet memeber?<a href="signup.php">Sign up now</a></div>
+
+
+
+
+
+
+<!--jAVASCRIPT CODE-->
+<script>
+           //validaton code for inputs
+var email=document.forms['form']['email'].value;
+var password=document.forms['form']['password'].value;
+var email_error=document.getElementById('email_error');
+var pass_error=document.getElementById('pass_error');
+function validated()
+{
+   if(email.length<9){
+email.style.border="1px solid red";
+email_error.style.display="block";
+email.focus();
+return false;
+}
+if(password.length<4)
+{
+password.style.border="1px solid red";
+pass_error.style.display="block";
+password.focus();
+return false;
+}
+}
+</script>           
+</body>
+</html>
