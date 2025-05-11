@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  background: url("C:\Users\ms\Downloads\study3.jpg");
+}
+
+
+/* Hero Section */
+.hero{
+    
+   background-repeat:no-repeat;
+  background-size:cover;
+  color: #677;
+  text-align: center;
+  padding: 100px;
+}
+
+nav ul li:hover > ul.dropdown {
+  display: block;
+}
+
+nav ul ul.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: 0;
+}
+
+nav ul ul.dropdown li {
+  display: block;
+  float: none;
+}
+
+nav ul ul.dropdown li a {
+  padding: 10px 20px;
+  color: #000;
+}
+
+nav ul ul.dropdown li a:hover {
+  background-color: #f0f0f0;
+}
+
+.hero h1 {
+  font-size:28px;
+  margin-bottom: 20px;
+  text-color:red;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.menu{
+ background-color:black;
+ height:80px;
+ width:100%;
+  align-items:center;
+ display:flex;
+ justify-content:space-between;
+ paddig:0 5%;
+}
+
+img
+{
+  width:150%;
+}
+.container {
+            text-align:center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type=text] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-icon .search-menu.show {
+            display: block;
+        }
+
+        /* Additional styles for the search icon and dropdown list */
+        .search-icon .search-button {
+            padding: 5px;
+            background-color: #f1f1f1;
+            border: none;
+        }
+
+        .search-icon .search-menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .search-icon .search-menu ul li {
+            padding: 5px 0;
+        }
+
+        .search-icon .search-menu ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.hira{
+   text-align:center;
+    font-style:cursive;
+}
+.hi{
+     font-style:cursive;
+     display:box;
+     border-style:1 solid blue;
+     font-color:red;
+   
+}
+.logo
+{
+  color:white;
+  font-size:20px;
+}
+.logo.span{
+    color:sky;
+
+}
+.menu ul{
+   display:flex;
+
+}
+.menu a:hover{
+  color:blue;
+
+}
+.menu ul li{
+padding:10px 30px;
+
+}
+.menu ul li a{
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+
+}
+.menu li{
+    display:inine-block;
+
+}
+.menu li{
+  font-family:sans-serif;
+  text-align:center;
+
+}
+.menu ul{
+   text-align:right;
+    
+}
+.me{
+   font-size:35px;
+   color:blue;
+   text-align:center;
+
+}
+.yx{
+   text-align:center;
+   font-family:sans-serif;
+
+}
+.icon{
+
+    color:white;
+}
+.right{
+   display:inline-block;
+   text-align:right;
+
+}
+ </style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="menu">
+     <div class="container-fluid">/div>
+    <div class="navbar-header">
+      <label style="text-align:left;" class="logo">Hira<span style="color:blue;"<span>@15</span></label>
+        <ul>
+      <li><u><a href="#"><i class="fa fa-solid fa fa-bars"></i></a></u></li>
+        <li><u><a href="#">Home</a></u></li>
+        <li><u><a href="About15.html">About</a></u></li>
+        <li><u><a href="w15sign.html">Login</u></li>
+        <li><u><a href="contactweb.html">Contact Us</a></u></li>
+    </ul>
+</nav>
+  
+<div class="container">
+  <h3>Semester #</h3>
+  <p>Click here!</p>
+</div>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-1
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="pf.html">PF</a></li>
+      <li><a href="english1.html">English</a></li>
+      <li><a href="islamicstudy.html">Islamic study</a></li>
+      <li><a href="calculus.html">Calculus</a></li>
+      <li><a href="ictc.html">ICTC</a</li>
+      <li><a href="Basicele.html">Basic electronics</a></li>
+    </ul>
+  </div>
+</div>
+    </section>
+</section>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-2
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">OOP</a></li>
+      <li><a href="#">Communication skill</a></li>
+      <li><a href="#">Discrete structure</a></li>
+      <li><a href="#">Statistics</a></li>
+      <li><a href="#">DLD</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-3
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Assembly Language</a></li>
+      <li><a href="#">Technical Report Writing</a></li>
+      <li><a href="#">Data Structure</a></li>
+      <li><a href="#">Computer Networks</a></li>
+      <li><a href="#">Pak-Study</a></li>
+      <li><a href="#">Principle of Managemnt</a></li>
+    </ul>
+  </div>
+</div>
+
+    </section>
+</section>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-4
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Linear-Algebra</a></li>
+      <li><a href="#">Software-Engineering</a></li>
+      <li><a href="#">DAA</a></li>
+      <li><a href="#">Database system</a></li>
+      <li><a href="#">HRM</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+</section>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-5
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">OOAD</a></li>
+      <li><a href="#">Web-system & Design</a></li>
+      <li><a href="#">OS</a></li>
+      <li><a href="#">TOA</a></li>
+      <li><a href="#">Multimedia System</a></li>
+      <li><a href="#">Multivariable Calculus</a></li>
+    </ul>
+  </div>
+</div>
+<section>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-6
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">AI</a></li>
+      <li><a href="#">Compiler Construction</a></li>
+      <li><a href="#">PADC</a></li>
+      <li><a href="#">Information Security</a></li>
+      <li><a href="#">MAD</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-7
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Capstone-I</a></li>
+      <li><a href="#">Data Mining</a></li>
+      <li><a href="#">Enterpreneurship</a></li>
+      <li><a href="#">DAAM</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+  <section class="hira">
+      <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester-8
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Capstone-II</a></li>
+      <li><a href="#">Professional Practice</a></li>
+      <li><a href="#">Data Warehousing</a></li>
+      <li><a href="#">Financial Accounting</a></li>
+      <li><a href="#">DLD</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+<section class="hero">
+    <a href="#" class="cta-button">Learn More</a>
+  </section>
+ <section class="features">
+ <div class="container">
+  <div class="row">
+    <div class="feature">
+      <h3>Feature 1</h3>
+      <p>Access study guides that provide concise</br> summaries  and key concepts for effective learning.</p>
+    </div>
+    <div class="feature">
+      <h3>Feature 2</h3>
+      <p>Engage in interactive learning<br> experiences through tools like</br> flashcards and interactive quizzes.</p>
+    </div>
+    <div class="feature">
+      <h3>Feature 3</h3>        
+      <p>Sharpen your skills and knowledge with a<br> wide range of practice questions and quizzes.</p>
+    </div>
+<div class="feature">
+      <h3>Feature 4</h3>
+     <p class="feature-description">Take organized and comprehensive notes<br> for all your subjects with ease.</p>
+            </div>
+  </div>
+</div>
+</section>
+ 
+
+
+    <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+</  body>
+</html>
