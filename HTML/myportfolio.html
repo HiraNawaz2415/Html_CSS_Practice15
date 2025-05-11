@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My CSS Portfolio</title>
+ <style>/* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+      /* Header */
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+      }
+      
+      header .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      header nav ul li {
+        margin: 0 15px;
+      }
+      
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        transition: color 0.3s;
+      }
+      
+      header nav ul li a:hover {
+        color: #ff6347;
+      }
+      
+      /* About Section */
+      #about {
+        background-color: #fff;
+        padding: 40px 0;
+      }
+      
+      .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .profile-img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+      }
+      
+      .bio {
+        flex: 1;
+      }
+      
+      .bio h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+      
+      .bio p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+      
+      /* Projects Section */
+      #projects {
+        background-color: #f0f0f0;
+        padding: 40px 0;
+      }
+      
+      #projects h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+      
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
+      .project-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      
+      .project-card h3 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+      
+      .project-card p {
+        font-size: 1rem;
+        color: #555;
+      }
+      
+      /* Contact Section */
+      #contact {
+        padding: 40px 0;
+        background-color: white;
+      }
+      
+      #contact h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      form input, form textarea {
+        width: 100%;
+        max-width: 500px;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      
+      form button {
+        background-color: #333;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        transition: background-color 0.3s;
+      }
+      
+      form button:hover {
+        background-color: #ff6347;
+      }
+      
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 1rem;
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .about-content {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-content">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+        <div class="bio">
+          <h2>About Me</h2>
+          <p>Hello! I'm a web developer with a passion for building modern, responsive websites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Logine page</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>A personal blog website.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>A Calculator.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
