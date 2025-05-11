@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="container">
+         <div class="header">
+             <h2>REGISTRATION FORM</h2> 
+      </div>
+         <form class="form" id="form" onsubmit="validate">
+            <div class="form-control">
+             <label><b>Username:</b></label>
+             <input type="text" name="" id="username" placeholder="Enter your fullname"><br>
+              <i class=" fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+               <small>Error Msg</small>
+               </div>
+              <div class="form-control">
+             <label><b>Email:</b></label>
+             <input type="email" name="" id="email" placeholder="Enter your Email"><br>
+              <i class=" fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+               <small>Error Msg</small>
+               </div>
+              <div class="form-control">
+             <label><b>Phone Number</b></label>
+             <input type="number" name="" id="phone" placeholder="Enter your phone number"><br>
+              <i class=" fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+               <small>Error Msg</small>
+               </div>
+             <div class="form-control">
+             <label><b>Password:</b></label>
+             <input type="password" name="" id="password" placeholder="Enter your Password"><br>
+              <i class=" fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+               <small>Error Msg</small>
+               </div>
+               <div class="form-control">
+             <label><b>Confirm Password:</b></label>
+             <input type="password" name="" id="cpassword" placeholder="Enter your Password"><br>
+              <i class=" fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+               <small>Error Msg</small>
+               </div>
+        <input type="submit" value="Submit" name="" class="btn">
+         </form>
+
+
+
+   <script>
+          var a=document.getelementById("username").value;
+            function validate()
+                 {
+                         var fail;
+                          fail+=validatename(a);
+                           if(fail=="")
+                                 return true;
+                            else
+                             {
+                                   alert(fail);
+                                     return false;
+                                 }
+                   }
+                    function  validatename(f)
+                      {
+                           if(f=="")
+                                 return"enter name;
+                   
+                               
+                            else if(f.length<2)
+                                 return"name should be at least 5 characters";
+                               
+                           else
+                                 return "";
+                       } 
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
