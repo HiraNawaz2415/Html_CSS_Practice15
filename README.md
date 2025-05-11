@@ -1,4 +1,4 @@
-# HTML & CSS Practice Projects
+# HTML & CSS Practice Topics
 
 This repository contains my personal practice projects created while learning and exploring **HTML5** and **CSS3**. Each folder or file demonstrates different topics and concepts to strengthen my front-end development skills.
 
