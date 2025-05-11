@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS-Only FAQ Accordion</title>
+  <style>body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f9fc;
+    padding: 50px;
+    color: #333;
+  }
+  
+  .accordion {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #0077cc;
+  }
+  
+  .item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .item input {
+    display: none;
+  }
+  
+  .item .question {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 15px 0;
+    position: relative;
+  }
+  
+  .item .question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+  }
+  
+  .item input:checked + .question::after {
+    content: "-";
+    transform: rotate(180deg);
+  }
+  
+  .item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .item input:checked ~ .answer {
+    max-height: 200px;
+    padding-bottom: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div class="accordion">
+    <h1>FAQ</h1>
+
+    <div class="item">
+      <input type="checkbox" id="faq1" />
+      <label for="faq1" class="question">What is HTML?</label>
+      <div class="answer">
+        <p>HTML stands for HyperText Markup Language. It is the standard language for creating web pages.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" id="faq2" />
+      <label for="faq2" class="question">What is CSS?</label>
+      <div class="answer">
+        <p>CSS stands for Cascading Style Sheets. It is used to style and layout web pages.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <input type="checkbox" id="faq3" />
+      <label for="faq3" class="question">What is the checkbox hack?</label>
+      <div class="answer">
+        <p>The checkbox hack is a CSS trick that allows toggling visibility using a hidden input and label.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
