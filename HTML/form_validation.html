@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Advanced Form Validation</title>
+  <title>Advanced Form with Checkbox & Radio Validation</title>
   <style>
     .error { color: red; font-size: 0.9em; }
-    .success { color: green; font-size: 0.9em; }
-    input:invalid { border: 1px solid red; }
-    input:valid { border: 1px solid green; }
+    input:invalid, select:invalid { border: 1px solid red; }
+    input:valid, select:valid { border: 1px solid green; }
   </style>
 </head>
 <body>
-  <h2>Register</h2>
+  <h2>Register Form</h2>
   <form id="registrationForm" onsubmit="return validateForm()">
     <label>Full Name:</label><br>
     <input type="text" id="name" oninput="validateName()"><br>
@@ -20,7 +19,7 @@
     <input type="text" id="email" oninput="validateEmail()"><br>
     <span id="emailError" class="error"></span><br>
 
-    <label>Phone (10 digits):</label><br>
+    <label>Phone:</label><br>
     <input type="text" id="phone" oninput="validatePhone()"><br>
     <span id="phoneError" class="error"></span><br>
 
@@ -32,15 +31,25 @@
     <input type="password" id="confirmPassword" oninput="validateConfirmPassword()"><br>
     <span id="confirmPasswordError" class="error"></span><br>
 
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female<br>
+    <span id="genderError" class="error"></span><br>
+
+    <label>Interests:</label><br>
+    <input type="checkbox" name="interests" value="Sports"> Sports
+    <input type="checkbox" name="interests" value="Music"> Music
+    <input type="checkbox" name="interests" value="Reading"> Reading<br>
+    <span id="interestsError" class="error"></span><br>
+
     <label>
-      <input type="checkbox" id="terms">
-      I agree to the terms and conditions
+      <input type="checkbox" id="terms"> I agree to the terms and conditions
     </label><br>
     <span id="termsError" class="error"></span><br><br>
 
     <input type="submit" value="Register">
   </form>
 
-  <script src="form-validation.js"></script>
+  <script src="advanced-validation.js"></script>
 </body>
 </html>
