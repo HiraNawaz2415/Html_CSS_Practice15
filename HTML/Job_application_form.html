@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Portal</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    .error { color: red; }
+    .success { background: #e0ffe0; padding: 20px; margin-top: 20px; border: 1px solid #0f0; }
+  </style>
+</head>
+<body>
+  <h2>Job Application Form</h2>
+  <form id="jobForm">
+    <label>Full Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label>Upload Resume (PDF/DOC):</label><br>
+    <input type="file" id="resume" accept=".pdf,.doc,.docx" required><br>
+    <span id="fileError" class="error"></span><br><br>
+
+    <label>Experience Level:</label><br>
+    <select id="experience" required>
+      <option value="">Select experience</option>
+      <option value="Fresher">Fresher</option>
+      <option value="1-2 years">1-2 years</option>
+      <option value="3-5 years">3-5 years</option>
+      <option value="5+ years">5+ years</option>
+    </select><br><br>
+
+    <label>Select Skills (Choose at least 2):</label><br>
+    <input type="checkbox" name="skills" value="HTML"> HTML<br>
+    <input type="checkbox" name="skills" value="CSS"> CSS<br>
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript<br>
+    <input type="checkbox" name="skills" value="React"> React<br>
+    <input type="checkbox" name="skills" value="Node.js"> Node.js<br>
+    <span id="skillError" class="error"></span><br><br>
+
+    <label>Select Location:</label><br>
+    <select id="location" required></select><br><br>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <div id="successMessage" class="success" style="display: none;"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
